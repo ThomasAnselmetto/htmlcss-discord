@@ -10,6 +10,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* generics */
 
 h1,
@@ -142,17 +146,18 @@ section {
     background-color: transparent;
     width: calc(100% / 3);
     min-height: 350px;
+    border-bottom: 1px solid lightgray;
+
 }
 
 .secondary {
     background-color: trasparent;
     width: 17%;
     min-height: 350px;
-
+    border-bottom: 1px solid lightgray;
 }
 
 .first-footer {
-    border-bottom: 2px solid lightgrey;
     width: 1200px;
 }
 
@@ -160,11 +165,11 @@ section {
     width: 100%;
     height: 70px;
     justify-content: space-between;
-    background-color: #7FFFD4;
+    background-color: transparent;
     text-align: center;
     padding: 0;
     align-items: center;
-    ;
+
 }
 
 .select-container {
@@ -192,6 +197,14 @@ img {
     color: white;
 }
 
+.second-footer>button {
+    width: 100px;
+    text-align: center;
+    line-height: 2.4;
+    background-color: #8EA1E1;
+    color: white;
+}
+
 .main:first-child {
     color: #8EA1E1;
 }
@@ -199,32 +212,21 @@ img {
 .secondary>ul>li:first-child {
     font-weight: bold;
     color: #8EA1E1;
+    margin-bottom: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+    ;
 }
 
 .fa-solid {
     margin: 0 5px;
 }
 
-a {
-    text-decoration: none;
-}
-
-
-.custom:hover {
-    background-color: red;
-    color: yellow;
-}
-
-.custom {
-    width: 100px;
-    background-color: forestgreen;
-    color: white;
-    text-align: center;
-    line-height: 2.4;
-}
-
 .fonts-style {
     color: white;
+    margin-bottom: 5px;
 }
 
 .dark-font {
@@ -237,4 +239,9 @@ a {
 .logos {
     width: 25px;
     color: white;
+}
+
+.star {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
 }
