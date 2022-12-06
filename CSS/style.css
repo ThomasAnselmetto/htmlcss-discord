@@ -1,0 +1,149 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generics */
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 170px;
+}
+
+.d-flex {
+    display: flex;
+
+}
+
+
+header>div {
+    background-color: #0596c7;
+    line-height: 2.6;
+}
+
+.link-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-nav {
+    flex-grow: 1;
+    background-color: #A98220;
+}
+
+.bg-alternative {
+    background-color: #D3D3D3;
+}
+
+/* potevo fare tutta la struttura fissa in html con 
+blocco main e sotto blocco aside e poi dire che chi 
+aveva bg-gray doveva avere anche flex-direction reverse
+ */
+#first-item {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 170px;
+    background-color: blue;
+}
+
+
+.first-section {
+    background-color: #EF81EE;
+    min-height: 300px;
+    max-width: 75%;
+    margin: 30px auto;
+}
+
+/* qui ci sara` jumbotron ossia l'immagine
+padding */
+
+.double {
+    height: 300px;
+
+}
+
+.little {
+    background-color: #FFC0CB;
+    width: 40%;
+}
+
+.big {
+    background-color: #1E7FDE;
+    width: 60%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.last-section {
+    width: 100%;
+    min-height: 500px;
+    background-color: #228B22;
+}
+
+.bg-dark {
+    background-color: #232629;
+}
+
+
+.main {
+    background-color: #F08080;
+    width: calc(100% / 3);
+    min-height: 350px;
+}
+
+.secondary {
+    background-color: #1cf2e7;
+    width: 17%;
+    min-height: 350px;
+    border: 1px dashed white;
+}
+
+.first-footer {
+    border-bottom: 2px solid lightgrey;
+    width: 1200px;
+}
+
+.second-footer {
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #7FFFD4;
+    text-align: center;
+    padding: 0;
+    align-items: center;
+    ;
+}
+
+
+
+/* utility */
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+.custom:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.custom {
+    width: 100px;
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+    line-height: 2.6;
+}
