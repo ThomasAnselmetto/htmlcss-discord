@@ -16,12 +16,11 @@ h2 {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 20px 170px;
+    padding: 30px 170px;
 }
 
 .d-flex {
     display: flex;
-
 }
 
 
@@ -55,6 +54,11 @@ header>div {
 blocco main e sotto blocco aside e poi dire che chi 
 aveva bg-gray doveva avere anche flex-direction reverse
  */
+
+section {
+    min-height: 450px;
+}
+
 #first-item {
     width: 1200px;
     margin: 0 auto;
@@ -78,21 +82,28 @@ aveva bg-gray doveva avere anche flex-direction reverse
 }
 
 
-
-
-
-.double {
-    height: 300px;
-
-}
-
 .little {
-    background-color: #FFC0CB;
+    background-color: trasparent;
     width: 40%;
 }
 
+.little>* {
+    max-width: 100%;
+    margin: 20px 0 20px 80px;
+}
+
+#margin-reverse {
+    background-color: trasparent;
+    width: 40%;
+}
+
+#margin-reverse>* {
+    max-width: 100%;
+    margin: 20px 80px 20px 0;
+}
+
 .big {
-    background-color: #1E7FDE;
+    background-color: trasparent;
     width: 60%;
 }
 
@@ -103,8 +114,15 @@ aveva bg-gray doveva avere anche flex-direction reverse
 .last-section {
     width: 100%;
     min-height: 500px;
-    background-color: #228B22;
+    background-color: transparent;
+    text-align: center;
 }
+
+.last-section h2 {
+    margin-bottom: 20px;
+}
+
+
 
 .bg-dark {
     background-color: #232629;
@@ -144,10 +162,21 @@ aveva bg-gray doveva avere anche flex-direction reverse
 
 
 /* utility */
+
+img {
+    max-width: 100%;
+}
+
 .rounded {
     border: 1px solid transparent;
     border-radius: 25px;
     padding: 5px 10px;
+    margin: 20px 0;
+}
+
+.ibrid-bg {
+    background-color: #8EA1E1;
+    color: white;
 }
 
 .fa-solid {
