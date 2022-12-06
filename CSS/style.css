@@ -22,7 +22,7 @@
 
 
 header>div {
-    background-color: #0596c7;
+    background-color: #3161E0;
     line-height: 2.6;
 }
 
@@ -50,7 +50,8 @@ aveva bg-gray doveva avere anche flex-direction reverse
     width: 1200px;
     margin: 0 auto;
     padding: 20px 170px;
-    background-color: blue;
+    background-image: url(../img/jumbo.png);
+    background-size: 100%
 }
 
 
@@ -126,6 +127,10 @@ padding */
 
 
 /* utility */
+.rounded {
+    border-radius: 25px;
+}
+
 
 a {
     text-decoration: none;
