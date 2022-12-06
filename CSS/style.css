@@ -145,10 +145,10 @@ section {
 }
 
 .secondary {
-    background-color: #1cf2e7;
+    background-color: trasparent;
     width: 17%;
     min-height: 350px;
-    border: 1px dashed white;
+
 }
 
 .first-footer {
@@ -192,8 +192,12 @@ img {
     color: white;
 }
 
-.main,
-.secondary:first-child {
+.main:first-child {
+    color: #8EA1E1;
+}
+
+.secondary>ul>li:first-child {
+    font-weight: bold;
     color: #8EA1E1;
 }
 
@@ -232,4 +236,5 @@ a {
 
 .logos {
     width: 25px;
+    color: white;
 }
