@@ -8,6 +8,10 @@
 
 /* generics */
 
+h1,
+h2 {
+    font-size: 40px;
+}
 
 .container {
     width: 1200px;
@@ -22,7 +26,7 @@
 
 
 header>div {
-    background-color: #3161E0;
+    background-color: #255EE9;
     line-height: 2.6;
 }
 
@@ -33,9 +37,14 @@ header>div {
     gap: 10px;
 }
 
+.link-list>li {
+    margin: 0 10px;
+}
+
+
 .main-nav {
     flex-grow: 1;
-    background-color: #A98220;
+    background-color: transparent;
 }
 
 .bg-alternative {
@@ -51,19 +60,26 @@ aveva bg-gray doveva avere anche flex-direction reverse
     margin: 0 auto;
     padding: 20px 170px;
     background-image: url(../img/jumbo.png);
-    background-size: 100%
+    background-size: 100%;
+    text-align: center;
 }
 
 
 .first-section {
-    background-color: #EF81EE;
+    background-color: transparent;
     min-height: 300px;
     max-width: 75%;
     margin: 30px auto;
 }
 
-/* qui ci sara` jumbotron ossia l'immagine
-padding */
+.first-section>* {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+
+
 
 .double {
     height: 300px;
@@ -92,6 +108,7 @@ padding */
 
 .bg-dark {
     background-color: #232629;
+    color: white;
 }
 
 
@@ -128,17 +145,19 @@ padding */
 
 /* utility */
 .rounded {
+    border: 1px solid transparent;
     border-radius: 25px;
+    padding: 5px 10px;
 }
 
+.fa-solid {
+    margin: 0 5px;
+}
 
 a {
     text-decoration: none;
 }
 
-a:visited {
-    color: blue;
-}
 
 .custom:hover {
     background-color: red;
@@ -151,4 +170,15 @@ a:visited {
     color: white;
     text-align: center;
     line-height: 2.6;
+}
+
+.fonts-style {
+    color: white;
+}
+
+.dark-font {
+    background-color: white;
+    color: black;
+    align-self: center;
+    border-radius: 25px;
 }
