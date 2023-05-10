@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font:inherit; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 ul {
@@ -51,10 +57,8 @@ header>div {
     margin: 0 10px;
 }
 
-
 .main-nav {
     flex-grow: 1;
-    background-color: transparent;
 }
 
 .bg-alternative {
@@ -70,12 +74,12 @@ section {
     margin: 0 auto;
     padding: 20px 170px;
     background-image: url(../img/jumbo.png);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
 .first-section {
-    background-color: transparent;
     min-height: 300px;
     max-width: 75%;
     margin: 30px auto;
@@ -86,9 +90,7 @@ section {
     line-height: 1.6;
 }
 
-
 .little {
-    background-color: trasparent;
     width: 40%;
 }
 
@@ -98,7 +100,6 @@ section {
 }
 
 #margin-reverse {
-    background-color: trasparent;
     width: 40%;
 }
 
@@ -108,7 +109,6 @@ section {
 }
 
 .big {
-    background-color: trasparent;
     width: 60%;
 }
 
@@ -119,7 +119,6 @@ section {
 .last-section {
     width: 100%;
     min-height: 500px;
-    background-color: transparent;
     text-align: center;
 }
 
@@ -136,7 +135,6 @@ section {
 
 
 .main {
-    background-color: transparent;
     width: calc(100% / 3);
     min-height: 350px;
     border-bottom: 1px solid lightgray;
@@ -144,7 +142,6 @@ section {
 }
 
 .secondary {
-    background-color: trasparent;
     width: 17%;
     min-height: 350px;
     border-bottom: 1px solid lightgray;
@@ -158,7 +155,6 @@ section {
     width: 100%;
     height: 70px;
     justify-content: space-between;
-    background-color: transparent;
     text-align: center;
     padding: 0;
     align-items: center;
@@ -179,7 +175,7 @@ img {
     border: 1px solid transparent;
     border-radius: 25px;
     padding: 5px 10px;
-    margin: 20px 0;
+    margin: 5px 10px;
 }
 
 .ibrid-bg {
@@ -238,4 +234,14 @@ li {
 .star {
     background-image: url(../img/stars.svg);
     background-size: contain;
+}
+
+.main-section::after {
+    content: "";
+    display: block;
+    background-image: url(../img/wave.svg);
+    background-size: cover;
+    min-height: 8rem;
+    color: black;
+
 }
